@@ -14,10 +14,14 @@ module.exports = class better_math{
      * @param {number} a Napraw liczbę jeżeli jest ujemna.
      */
     repair_number(a){
+        try{
         a = parseFloat(a)
         if(isNaN(a)) return console.error('Funckaj repair_number() wymaga podania liczby.')
         if(a < 0) return `(${a})`
         else return a
+        }catch(e){
+            console.error(e)
+        }
     }
 
     /**
@@ -25,10 +29,14 @@ module.exports = class better_math{
      * @param {number} potega
      */
     potega(liczba, potega){
+        try{
         liczba = parseFloat(liczba)
         potega = parseInt(potega)
         const wynik = Math.pow(liczba, potega)
         if(isNaN(wynik)) return console.error('Funkcja potega() wymaga podania liczb.')
         return wynik
+        }catch(e){
+            return console.error(e)
+        }
     }
 }
