@@ -1,5 +1,5 @@
 /**
- * @author Mateusz Kalaga / Wszelkie prawa zastrzezone
+ * @author Mateusz#4711 / Wszelkie prawa zastrzezone
  * @version 1.0.0
  * @description 
  * const better_math = require('./better-maths.js')
